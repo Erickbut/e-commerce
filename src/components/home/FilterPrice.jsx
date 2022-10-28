@@ -6,7 +6,7 @@ const FilterPrice = ({setFilterByPrice}) => {
     e.preventDefault()
     const from = +e.target.from.value
     const to = +e.target.to.value
-    const obj ={
+    const obj = {
       from: from,
       to: to !== 0 ? to : Infinity
     }

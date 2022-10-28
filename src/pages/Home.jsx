@@ -13,10 +13,9 @@ const Home = () => {
   const [inputText, setInputText] = useState('')
   const [filterByText, setFilterByText] = useState()
   const [filterByPrice, setFilterByPrice] = useState({
-    from:0,
-    to:Infinity
+    from: 0,
+    to: Infinity
   })
-
   const products = useSelector(state => state.products)
 
   const dispatch = useDispatch()
@@ -26,35 +25,32 @@ const Home = () => {
   }, [])
 
   useEffect(() => {
-
     if (inputText !== '' && products) {
       const cb = product => product.title.toLowerCase().includes(inputText.toLocaleLowerCase().trim())
       setFilterByText(products.filter(cb))
     } else {
       setFilterByText(products)
     }
+  }, [inputText, products])
 
-  }, [inputText,products])
-
-  const CallBackFilterPrice = product =>{
-    return +product.price >= filterByPrice.from &&
-    +product.price <= filterByPrice.to
+  const CallBackFilterPrice = product => {
+    return +product.price >= filterByPrice.from && +product.price <= filterByPrice.to
   }
 
   return (
     <main className='home'>
       <InputSearch inputText={inputText} setInputText={setInputText} />
-      <FilterPrice setFilterByPrice={setFilterByPrice}/>
-      <FilterCategory/>
-      <OrderByPrice/>
+      <FilterPrice setFilterByPrice={setFilterByPrice} />
+      <FilterCategory />
+      <OrderByPrice />
       <div className='home__container'>
         {
-            filterByText?.filter(CallBackFilterPrice).map(product => (
-              <CardProduct
-                key={product.id}
-                product={product}
-              />
-            ))
+          filterByText?.filter(CallBackFilterPrice).map(product => (
+            <CardProduct
+              key={product.id}
+              product={product}
+            />
+          ))
         }
       </div>
     </main>

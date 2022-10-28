@@ -16,7 +16,7 @@ const OrderByPrice = () => {
   return (
     <div>
       <h3>Order Price</h3>
-      <button onClick={handleAscending} className='order__btn'>Ascendant ⬆️</button>
+      <button onClick={handleAscending} className='order__btn'>Ascending ⬆️</button>
       <button onClick={handleDescending} className='order__btn'>Descending ⬇️</button>
     </div>
   )

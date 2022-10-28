@@ -2,7 +2,6 @@ import React from 'react'
 
 const CardPurchase = ({purchase}) => {
 
-  console.log(purchase)
   Object.hasOwnProperty()
 
   return (

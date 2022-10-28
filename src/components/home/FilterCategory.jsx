@@ -13,7 +13,7 @@ const FilterCategory = () => {
       .then(res => setCategories(res.data.data.categories))
       .catch(err => console.log(err))
   }, [])
-
+  
   const dispatch = useDispatch()
 
   const handleFetchCategory = id => {
