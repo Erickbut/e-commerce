@@ -1,0 +1,11 @@
+.art_filterCategory{
+  display: block;
+}
+.filter_cat-title{
+  margin-left: 40px;
+}
+.ul-cat{
+  display: grid;
+  margin-left: 40px;
+
+}

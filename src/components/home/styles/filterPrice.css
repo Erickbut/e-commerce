@@ -1,0 +1,22 @@
+.filterPrice_title{
+margin-left: 40px;
+}
+.from-div{
+  margin-left: 40px;
+
+}
+.to-div{
+  margin-left: 40px;
+}
+.input-to{
+  margin-left: 21px;
+}
+.filter-price-btn{
+  background-color: var(--bg-color-red);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 150px;
+  margin-top: 8px;
+}
