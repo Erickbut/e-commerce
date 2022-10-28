@@ -1,0 +1,7 @@
+.filter-price__btn,.order__btn{
+  background-color: var(--bg-color-red);
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 20px;
+}
