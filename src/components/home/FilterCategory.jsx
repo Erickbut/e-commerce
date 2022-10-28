@@ -17,7 +17,7 @@ const FilterCategory = () => {
   const dispatch = useDispatch()
 
   const handleFetchCategory = id => {
-
+    console.log(id)
     if (id) {
       // Peticion de filtro por categoria
       dispatch(getProductsByCategory(id))
@@ -31,9 +31,7 @@ const FilterCategory = () => {
     <article>
       <h3>Category</h3>
       <ul>
-        <li onClick={() => handleFetchCategory()}
-          style={{ cursor: 'pointer' }}
-        >All Products</li>
+        <li onClick={() => handleFetchCategory()} style={{ cursor: 'pointer' }}>All Products</li>
         {
           categories?.map(category => (
             <li
