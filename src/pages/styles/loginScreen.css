@@ -1,0 +1,21 @@
+.login{
+  margin-top: 50px ;
+  margin-left: 50px;
+}
+.login_title{
+  color: white;
+}
+.label__login{
+  color: white;
+  margin-right: 8px;
+}
+.input__login-mail{
+  margin-left: 12px;
+}
+.login_btn{
+  background-color: var(--bg-color-red);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
+}

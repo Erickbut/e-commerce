@@ -1,12 +1,27 @@
 .header{
-background-color:var(--bg-color-red);
-width: auto;
+  background: linear-gradient(178.99deg,#a80404d0 .92%,#490404c6 67.86%,#260606 99.08%);
 display: flex;
 padding: 20px;
 }
 .header__title{
 margin-right: 60%;
 }
+.link-header__ecommerce{
+  text-decoration: none;
+  color: black;
+}
+.link-header__ecommerce:hover{
+  color: white;
+
+}
+.header__link{
+  color: black;
+}
+.header__link:hover{
+  color: white;
+
+}
+
 .header__nav{
   display: flex;
   

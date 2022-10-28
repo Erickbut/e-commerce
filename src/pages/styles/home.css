@@ -1,3 +1,8 @@
+body{
+  background: linear-gradient(178.99deg,#a80404d0 .92%,#490404c6 67.86%,#260606 99.08%);
+  min-height: 100vh;
+  position: relative;
+}
 .home__container{
   padding:20px;
   display: flex;
@@ -7,4 +12,17 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+.input_home{
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+}
+.input_icon{
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.letter-home{
+margin-right: 5px;
 }
